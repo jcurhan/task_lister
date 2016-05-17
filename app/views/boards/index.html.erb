@@ -1,0 +1,11 @@
+<h1>Create a New Board</h1>
+<%= form_for Board.new do |f| %>
+  <%= f.text_field :name, placeholder: "Enter Board Name", autocomplete: :off %>
+  <%= f.submit %>
+<% end %>
+
+<ul class="boards">
+  <% @boards.each do |board| %>
+    <li><%=link_to board.name, board %></li>
+  <% end %>
+</ul>

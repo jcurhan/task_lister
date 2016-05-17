@@ -1,0 +1,11 @@
+<li id="<%= list.id %>">
+  <%= list.title %>
+  <!-- CREATE NEW TASKS -->
+    <%= form_for list.tasks.build, url: board_list_tasks_path(@board.id, list.id) do |f| %>
+      <%= f.text_field :description, placeholder: "Enter Task" %>
+      <%= f.select :priority, ['Low', 'Medium', 'High']%>
+      <%= f.submit %>
+    <% end %>
+  <!-- SHOW ASSOCIATED TASKS -->
+  <ul class="list_task"></ul>
+</li>
