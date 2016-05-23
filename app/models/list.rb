@@ -11,6 +11,7 @@
 class List < ActiveRecord::Base
   belongs_to :board
   has_many :tasks
+  validates :title, presence: true
 
   def persisted_tasks
     self.tasks.select(&:persisted?)

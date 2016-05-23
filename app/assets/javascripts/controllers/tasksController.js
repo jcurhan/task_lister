@@ -30,7 +30,7 @@ app.tasks.controller = {
           var description = response.task.description;
           var priority = response.task.priority;
           var task = new app.tasks.model.new(taskId, description, priority)
-          $('li[id=' + listId + '] .list_task').prepend("<li>" + description + " - " + priority + "<span class='delete-task' data-taskId=" + response.task.id + ">DELETE</span></li>");
+          $('li[id=' + listId + '] .list_task').prepend("<li>" + description + " - " + priority + "<span class='delete-task' data-taskId=" + response.task.id + "> [DELETE]</span></li>");
         } else if (!response.success) {
           var errorMessage = response.error
           $('.error_messages').prepend('<h3>' + errorMessage + '</h3>')

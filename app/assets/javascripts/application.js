@@ -20,3 +20,4 @@
 //= require controllers/boardsController.js
 //= require controllers/listsController.js
 //= require controllers/tasksController.js
+//= require bootstrap.min

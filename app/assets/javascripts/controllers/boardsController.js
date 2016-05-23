@@ -10,13 +10,13 @@ new: {
     // AJAX REQUEST TO CREATE BOARD
     $.ajax({
       url: '/boards',
-      data: { name: boardValue},
+      data: {name: boardValue},
       method: 'POST'
       }).success(function(response) {
         var id = response.id
         var name = response.name
         var board = new app.boards.model.new(id, name)
-        $('.boards').append("<li><a href='/boards/" + board.id + "'>" + board.name + "</a></li>")
+        $('.boards').append("<a class='btn btn-primary btn-lg btn-block' href='/boards/" + board.id + "'>" + board.name + "</a>")
       })
     }
   }

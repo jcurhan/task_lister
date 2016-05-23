@@ -6,7 +6,7 @@
 <%= form_for [@board, @list] do |f| %>
   <%= f.label :title, 'Create List' %>
   <%= f.text_field :title, placeholder: "Enter List Name", autocomplete: :off %>
-  <%= f.submit %>
+    <%= f.submit "Create List", class: "btn btn-primary" %>
 <% end %>
 <hr>
 <!-- ASSOCIATED LISTS -->
@@ -18,7 +18,7 @@
       <%= form_for list.tasks.build, url: board_list_tasks_path(@board.id, list.id) do |f| %>
         <%= f.text_field :description, placeholder: "Enter Task", autocomplete: :off %>
         <%= f.select :priority, ['Low', 'Medium', 'High']%>
-        <%= f.submit %>
+        <%= f.submit "Create Task", class: "btn btn-primary" %>
       <% end %>
 
       <!-- SHOW ASSOCIATED TASKS -->
@@ -26,7 +26,7 @@
          <% list.sorted_tasks_by_priority.each do |task| %>
            <li>
              <%= task.description %> - <%= task.priority %>
-             <span class="delete-task" data-taskId="<%= task.id %>">DELETE</span>
+             <span class="delete-task" data-taskId="<%= task.id %>">[DELETE]</span>
            </li>
          <% end %>
        </ul>
