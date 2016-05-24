@@ -13,6 +13,13 @@ $(document).ready(function() {
     var url = path + "/" + taskId
     app.tasks.controller.destroy.init(event, url)
   })
+  $(document).on('click', '.edit-task', function() {
+    // To Do: Have a modal pop up on click, then capture the altered text to make ajax request on submit of the edit
+    var taskId = $(this).attr('data-taskid');
+    var path = $(this).parent().parent().parent().children().attr('action')
+    var url = path + "/" + taskId
+    app.tasks.controller.edit.init(event, url)
+  })
 });
 
 app.tasks.controller = {
@@ -30,7 +37,7 @@ app.tasks.controller = {
           var description = response.task.description;
           var priority = response.task.priority;
           var task = new app.tasks.model.new(taskId, description, priority)
-          $('li[id=' + listId + '] .list_task').prepend("<li>" + description + " - " + priority + "<span class='delete-task' data-taskId=" + response.task.id + "> [DELETE]</span></li>");
+          $('li[id=' + listId + '] .list_task').prepend("<li>" + description + " - " + priority + "<span class='delete-task' data-taskId=" + response.task.id + "> [DELETE]</span><span class='edit-task' data-taskId=" + response.task.id + "> [EDIT]</span></li>");
         } else if (!response.success) {
           var errorMessage = response.error
           $('.error_messages').prepend('<h3>' + errorMessage + '</h3>')
@@ -48,6 +55,17 @@ app.tasks.controller = {
         var taskId = response.taskId
         var $spanTask = $(document).find('li span[data-taskid=' + taskId + ']')
         $spanTask.parent().remove()
+      })
+    }
+  },
+  edit: {
+    init: function(event, url) {
+      event.preventDefault();
+      $.ajax({
+        url: url,
+        method: "POST"
+      }).success(function(response){
+        debugger;
       })
     }
   }

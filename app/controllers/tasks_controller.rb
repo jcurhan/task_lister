@@ -11,6 +11,10 @@ class TasksController < ApplicationController
     end
   end
 
+  def update
+    binding.pry
+  end
+
   def destroy
     task = Task.find(params[:id])
     task_id = task.id

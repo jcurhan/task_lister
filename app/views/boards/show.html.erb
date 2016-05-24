@@ -27,6 +27,7 @@
            <li>
              <%= task.description %> - <%= task.priority %>
              <span class="delete-task" data-taskId="<%= task.id %>">[DELETE]</span>
+             <span class="edit-task" data-taskId="<%= task.id %>">[EDIT]</span>
            </li>
          <% end %>
        </ul>
