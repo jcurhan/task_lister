@@ -1,6 +1,11 @@
 $(document).ready(function() {
   $('#new_board').on('submit', app.boards.controller.new.init);
   $('.board-search').keyup( app.boards.controller.search);
+  $('.board-search').keydown(function(event) {
+    if(event.keyCode == 13) {
+      event.preventDefault(); // prevent "Return" key for live search field
+    }
+  });
 })
 
 app.boards.controller = {
@@ -38,7 +43,7 @@ app.boards.controller = {
             $('.search-results').prepend("<li><a href='/boards/" + searchBoardId + "'>" + searchBoardName + "</a></li>");
           }
         } else {
-          $('.search-results').prepend("<li>No Boards found.</li>")
+          $('.search-results').prepend("<li>No Boards found</li>")
         }
       })
     }
