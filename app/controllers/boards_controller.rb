@@ -6,7 +6,6 @@ class BoardsController < ApplicationController
   end
 
   def create
-    # {"name"=>"Something", "controller"=>"boards", "action"=>"create"}
     @board = Board.new(board_params)
     if @board.save
       render json: @board
@@ -19,10 +18,19 @@ class BoardsController < ApplicationController
     @list = List.new
   end
 
+  def search
+    boards = Board.find_boards_by_search(search_params)
+    render json: boards
+  end
+
   private
 
   def board_params
     params.permit(:name)
+  end
+
+  def search_params
+    params.permit(:search)
   end
 
   def find_board

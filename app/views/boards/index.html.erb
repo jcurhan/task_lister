@@ -6,11 +6,13 @@
 
 <div class="row">
   <ul class="boards">
-  <h2>My Boards</h2>
-    <% @boards.each do |board| %>
-    <div class="col-md-4 board-buttons">
-      <a class="btn btn-primary btn-lg btn-block" href="/boards/<%= board.id %>" role="button"><%= board.name %></a>
+    <h2>My Boards</h2>
+      <% @boards.each do |board| %>
+        <div class="col-md-3 board-buttons">
+          <a class="btn btn-primary btn-lg btn-block" href="/boards/<%= board.id %>" role="button"><%= board.name %></a>
+        </div>
+      <% end %>
+    <div class="col-md-3 append-board-button">
     </div>
-    <% end %>
   </ul>
 </div>
