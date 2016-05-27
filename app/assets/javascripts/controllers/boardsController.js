@@ -28,7 +28,7 @@ app.boards.controller = {
       }
     },
   search: function() {
-    $('.search-results').empty()
+    $('.list-group').empty()
     searchVal = $(this).val()
     if (!!searchVal) {
       $.ajax({
@@ -40,10 +40,10 @@ app.boards.controller = {
           for (i = 0; i < response.length; i++) { 
             var searchBoardName = response[i].name;
             var searchBoardId = response[i].id;
-            $('.search-results').prepend("<li><a href='/boards/" + searchBoardId + "'>" + searchBoardName + "</a></li>");
+            $('.list-group').prepend("<a href='/boards/" + searchBoardId + "' class='list-group-item'>" + searchBoardName + "</a>");
           }
         } else {
-          $('.search-results').prepend("<li>No Boards found</li>")
+          $('.list-group').prepend("<h6>No Boards found</h6>")
         }
       })
     }

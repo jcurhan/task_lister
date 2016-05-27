@@ -35444,3 +35444,900 @@ Processing by BoardsController#search as */*
   Parameters: {"search"=>"t"}
   [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%t%')
 Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 14:36:21 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BoardsController#index as HTML
+  [1m[35mBoard Load (1.0ms)[0m  SELECT "boards".* FROM "boards"
+  Rendered boards/index.html.erb within layouts/application (159.2ms)
+Completed 200 OK in 2776ms (Views: 2759.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/lists_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-27 14:36:26 -0400
+
+
+Started GET "/assets/tasks_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-27 14:36:26 -0400
+
+
+Started GET "/assets/boards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-27 14:36:26 -0400
+
+
+Started GET "/assets/style.self-681262c8c323c5e50ac04651cf55a78c73ddef257e41231114f1d3c788917edd.css?body=1" for ::1 at 2016-05-27 14:36:26 -0400
+
+
+Started GET "/assets/application.self-98cf8b921d735662ff29abffd752835e67fa08af0765581a78f871251f268794.css?body=1" for ::1 at 2016-05-27 14:36:26 -0400
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for ::1 at 2016-05-27 14:36:26 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-27 14:36:26 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-27 14:36:26 -0400
+
+
+Started GET "/assets/app.self-9d5ce5ca6924abe64ed99924b3b7e59478655493223fa97b77cacf1695e2ec14.js?body=1" for ::1 at 2016-05-27 14:36:26 -0400
+
+
+Started GET "/assets/controllers/boardsController.self-f043b8986267e07aca01fc7a845c42723f0ddd1e34e05dbd136da3c341143cd8.js?body=1" for ::1 at 2016-05-27 14:36:26 -0400
+
+
+Started GET "/assets/controllers/listsController.self-04b68b70cf2fdf45b300d9b9ca7e7444645e66b2e36a2c999415d0b3566bdf66.js?body=1" for ::1 at 2016-05-27 14:36:26 -0400
+
+
+Started GET "/assets/controllers/tasksController.self-c86d4389be732681d84f57510aa93b230110c9af6633be960f645c607e0e2af8.js?body=1" for ::1 at 2016-05-27 14:36:26 -0400
+
+
+Started GET "/assets/models/board.self-3bd1bb0f80aec5443613b260806d5fb6c464a33c6d95f1bcc52e48aca02cacf8.js?body=1" for ::1 at 2016-05-27 14:36:26 -0400
+
+
+Started GET "/assets/models/list.self-f3776842b2d27f46bd87867ef901170b14a84dd42ced8ffcb9113bbc846ab574.js?body=1" for ::1 at 2016-05-27 14:36:26 -0400
+
+
+Started GET "/assets/models/task.self-70e4e214fb74011a40b277fee5d4c169d5fceab6f6ec2bf10f18fbac09c861a3.js?body=1" for ::1 at 2016-05-27 14:36:26 -0400
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2016-05-27 14:36:27 -0400
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for ::1 at 2016-05-27 14:36:27 -0400
+
+
+Started GET "/boards/search?search=1" for ::1 at 2016-05-27 14:36:30 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"1"}
+  [1m[36mBoard Load (0.5ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%1%')[0m
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boards/search?search=12" for ::1 at 2016-05-27 14:36:45 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"12"}
+  [1m[35mBoard Load (0.5ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%12%')
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boards/search?search=123" for ::1 at 2016-05-27 14:36:52 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"123"}
+  [1m[36mBoard Load (0.6ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%123%')[0m
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/boards/search?search=123f" for ::1 at 2016-05-27 14:37:12 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"123f"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%123f%')
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=123" for ::1 at 2016-05-27 14:37:15 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"123"}
+  [1m[36mBoard Load (0.4ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%123%')[0m
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boards/search?search=12" for ::1 at 2016-05-27 14:37:16 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"12"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%12%')
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=1" for ::1 at 2016-05-27 14:37:17 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"1"}
+  [1m[36mBoard Load (0.4ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%1%')[0m
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boards/search?search=f" for ::1 at 2016-05-27 14:37:25 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"f"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%f%')
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=ff" for ::1 at 2016-05-27 14:37:26 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"ff"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%ff%')[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=fff" for ::1 at 2016-05-27 14:37:26 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"fff"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%fff%')
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=ffff" for ::1 at 2016-05-27 14:37:27 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"ffff"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%ffff%')[0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=fffff" for ::1 at 2016-05-27 14:37:28 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"fffff"}
+  [1m[35mBoard Load (0.4ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%fffff%')
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boards/search?search=ffffff" for ::1 at 2016-05-27 14:37:28 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"ffffff"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%ffffff%')[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=fffffff" for ::1 at 2016-05-27 14:37:29 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"fffffff"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%fffffff%')
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=fffffffd" for ::1 at 2016-05-27 14:37:29 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"fffffffd"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%fffffffd%')[0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=f" for ::1 at 2016-05-27 14:41:34 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"f"}
+  [1m[35mBoard Load (0.4ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%f%')
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boards/search?search=s" for ::1 at 2016-05-27 14:41:40 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"s"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%s%')[0m
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=ss" for ::1 at 2016-05-27 14:41:41 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"ss"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%ss%')
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=s" for ::1 at 2016-05-27 14:41:42 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"s"}
+  [1m[36mBoard Load (0.4ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%s%')[0m
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boards/search?search=f" for ::1 at 2016-05-27 14:41:43 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"f"}
+  [1m[35mBoard Load (0.4ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%f%')
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 14:44:31 -0400
+Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.7ms)[0m  [1mSELECT "boards".* FROM "boards"[0m
+  Rendered boards/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 108ms (Views: 107.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boards/search?search=f" for ::1 at 2016-05-27 14:44:32 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"f"}
+  [1m[35mBoard Load (0.4ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%f%')
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boards/search?search=f" for ::1 at 2016-05-27 14:44:32 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"f"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%f%')[0m
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/boards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-27 14:44:33 -0400
+
+
+Started GET "/assets/lists_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-27 14:44:33 -0400
+
+
+Started GET "/assets/tasks_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-27 14:44:33 -0400
+
+
+Started GET "/assets/style.self-681262c8c323c5e50ac04651cf55a78c73ddef257e41231114f1d3c788917edd.css?body=1" for ::1 at 2016-05-27 14:44:33 -0400
+
+
+Started GET "/assets/application.self-98cf8b921d735662ff29abffd752835e67fa08af0765581a78f871251f268794.css?body=1" for ::1 at 2016-05-27 14:44:33 -0400
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for ::1 at 2016-05-27 14:44:33 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-27 14:44:33 -0400
+
+
+Started GET "/assets/app.self-9d5ce5ca6924abe64ed99924b3b7e59478655493223fa97b77cacf1695e2ec14.js?body=1" for ::1 at 2016-05-27 14:44:33 -0400
+
+
+Started GET "/assets/controllers/boardsController.self-f043b8986267e07aca01fc7a845c42723f0ddd1e34e05dbd136da3c341143cd8.js?body=1" for ::1 at 2016-05-27 14:44:33 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-27 14:44:33 -0400
+
+
+Started GET "/assets/controllers/listsController.self-04b68b70cf2fdf45b300d9b9ca7e7444645e66b2e36a2c999415d0b3566bdf66.js?body=1" for ::1 at 2016-05-27 14:44:33 -0400
+
+
+Started GET "/assets/controllers/tasksController.self-c86d4389be732681d84f57510aa93b230110c9af6633be960f645c607e0e2af8.js?body=1" for ::1 at 2016-05-27 14:44:33 -0400
+
+
+Started GET "/assets/models/board.self-3bd1bb0f80aec5443613b260806d5fb6c464a33c6d95f1bcc52e48aca02cacf8.js?body=1" for ::1 at 2016-05-27 14:44:33 -0400
+
+
+Started GET "/assets/models/list.self-f3776842b2d27f46bd87867ef901170b14a84dd42ced8ffcb9113bbc846ab574.js?body=1" for ::1 at 2016-05-27 14:44:33 -0400
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for ::1 at 2016-05-27 14:44:33 -0400
+
+
+Started GET "/assets/models/task.self-70e4e214fb74011a40b277fee5d4c169d5fceab6f6ec2bf10f18fbac09c861a3.js?body=1" for ::1 at 2016-05-27 14:44:33 -0400
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2016-05-27 14:44:33 -0400
+
+
+Started GET "/" for ::1 at 2016-05-27 14:47:58 -0400
+Processing by BoardsController#index as HTML
+  [1m[35mBoard Load (0.5ms)[0m  SELECT "boards".* FROM "boards"
+  Rendered boards/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 878ms (Views: 876.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/lists_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-27 14:47:59 -0400
+
+
+Started GET "/assets/style.self-681262c8c323c5e50ac04651cf55a78c73ddef257e41231114f1d3c788917edd.css?body=1" for ::1 at 2016-05-27 14:47:59 -0400
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for ::1 at 2016-05-27 14:47:59 -0400
+
+
+Started GET "/assets/tasks_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-27 14:47:59 -0400
+
+
+Started GET "/assets/boards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-27 14:47:59 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-27 14:47:59 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-27 14:47:59 -0400
+
+
+Started GET "/assets/application.self-98cf8b921d735662ff29abffd752835e67fa08af0765581a78f871251f268794.css?body=1" for ::1 at 2016-05-27 14:47:59 -0400
+
+
+Started GET "/assets/app.self-9d5ce5ca6924abe64ed99924b3b7e59478655493223fa97b77cacf1695e2ec14.js?body=1" for ::1 at 2016-05-27 14:47:59 -0400
+
+
+Started GET "/assets/controllers/boardsController.self-cf6c34441bd0fa08205dd1eca13057e45613d51d1517ff7fa549532bddc9ede7.js?body=1" for ::1 at 2016-05-27 14:48:00 -0400
+
+
+Started GET "/assets/models/board.self-3bd1bb0f80aec5443613b260806d5fb6c464a33c6d95f1bcc52e48aca02cacf8.js?body=1" for ::1 at 2016-05-27 14:48:00 -0400
+
+
+Started GET "/assets/controllers/tasksController.self-c86d4389be732681d84f57510aa93b230110c9af6633be960f645c607e0e2af8.js?body=1" for ::1 at 2016-05-27 14:48:00 -0400
+
+
+Started GET "/assets/controllers/listsController.self-04b68b70cf2fdf45b300d9b9ca7e7444645e66b2e36a2c999415d0b3566bdf66.js?body=1" for ::1 at 2016-05-27 14:48:00 -0400
+
+
+Started GET "/assets/models/list.self-f3776842b2d27f46bd87867ef901170b14a84dd42ced8ffcb9113bbc846ab574.js?body=1" for ::1 at 2016-05-27 14:48:00 -0400
+
+
+Started GET "/assets/models/task.self-70e4e214fb74011a40b277fee5d4c169d5fceab6f6ec2bf10f18fbac09c861a3.js?body=1" for ::1 at 2016-05-27 14:48:00 -0400
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2016-05-27 14:48:00 -0400
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for ::1 at 2016-05-27 14:48:00 -0400
+
+
+Started GET "/boards/search?search=g" for ::1 at 2016-05-27 14:48:02 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"g"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%g%')[0m
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=t" for ::1 at 2016-05-27 14:48:05 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"t"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%t%')
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=te" for ::1 at 2016-05-27 14:48:06 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"te"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%te%')[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=t" for ::1 at 2016-05-27 14:48:09 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"t"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%t%')
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=asd" for ::1 at 2016-05-27 14:48:24 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"asd"}
+  [1m[36mBoard Load (0.4ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%asd%')[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boards/search?search=asd" for ::1 at 2016-05-27 14:48:24 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"asd"}
+  [1m[35mBoard Load (0.4ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%asd%')
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boards/search?search=asd" for ::1 at 2016-05-27 14:48:24 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"asd"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%asd%')[0m
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=asdf" for ::1 at 2016-05-27 14:48:26 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"asdf"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%asdf%')
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=asdff" for ::1 at 2016-05-27 14:48:27 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"asdff"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%asdff%')[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=asdfff" for ::1 at 2016-05-27 14:48:27 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"asdfff"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%asdfff%')
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=asdffff" for ::1 at 2016-05-27 14:48:28 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"asdffff"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%asdffff%')[0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=asdfffff" for ::1 at 2016-05-27 14:48:28 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"asdfffff"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%asdfffff%')
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=asdffffff" for ::1 at 2016-05-27 14:48:29 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"asdffffff"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%asdffffff%')[0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=asdfffffff" for ::1 at 2016-05-27 14:48:31 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"asdfffffff"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%asdfffffff%')
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.min.css.map" for ::1 at 2016-05-27 14:50:52 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css.map"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jcurhan/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jcurhan/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jcurhan/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.8ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.4ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.1ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (990.5ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (464.8ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.4ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1080.4ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 14:51:28 -0400
+Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (0.4ms)[0m  [1mSELECT "boards".* FROM "boards"[0m
+  Rendered boards/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 741ms (Views: 739.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/boards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-27 14:51:30 -0400
+
+
+Started GET "/assets/application.self-98cf8b921d735662ff29abffd752835e67fa08af0765581a78f871251f268794.css?body=1" for ::1 at 2016-05-27 14:51:30 -0400
+
+
+Started GET "/assets/style.self-681262c8c323c5e50ac04651cf55a78c73ddef257e41231114f1d3c788917edd.css?body=1" for ::1 at 2016-05-27 14:51:30 -0400
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for ::1 at 2016-05-27 14:51:30 -0400
+
+
+Started GET "/assets/tasks_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-27 14:51:30 -0400
+
+
+Started GET "/assets/lists_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-27 14:51:30 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-27 14:51:30 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-27 14:51:30 -0400
+
+
+Started GET "/assets/app.self-9d5ce5ca6924abe64ed99924b3b7e59478655493223fa97b77cacf1695e2ec14.js?body=1" for ::1 at 2016-05-27 14:51:30 -0400
+
+
+Started GET "/assets/controllers/boardsController.self-e7a025d480668a34f9c8b297f4c337449bcb8e76a5f1c20d57c7cc2f3361e9a0.js?body=1" for ::1 at 2016-05-27 14:51:30 -0400
+
+
+Started GET "/assets/controllers/listsController.self-04b68b70cf2fdf45b300d9b9ca7e7444645e66b2e36a2c999415d0b3566bdf66.js?body=1" for ::1 at 2016-05-27 14:51:30 -0400
+
+
+Started GET "/assets/controllers/tasksController.self-c86d4389be732681d84f57510aa93b230110c9af6633be960f645c607e0e2af8.js?body=1" for ::1 at 2016-05-27 14:51:30 -0400
+
+
+Started GET "/assets/models/task.self-70e4e214fb74011a40b277fee5d4c169d5fceab6f6ec2bf10f18fbac09c861a3.js?body=1" for ::1 at 2016-05-27 14:51:30 -0400
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for ::1 at 2016-05-27 14:51:30 -0400
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2016-05-27 14:51:31 -0400
+
+
+Started GET "/assets/models/board.self-3bd1bb0f80aec5443613b260806d5fb6c464a33c6d95f1bcc52e48aca02cacf8.js?body=1" for ::1 at 2016-05-27 14:51:31 -0400
+
+
+Started GET "/assets/models/list.self-f3776842b2d27f46bd87867ef901170b14a84dd42ced8ffcb9113bbc846ab574.js?body=1" for ::1 at 2016-05-27 14:51:31 -0400
+
+
+Started GET "/assets/bootstrap.min.css.map" for ::1 at 2016-05-27 14:52:06 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css.map"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jcurhan/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jcurhan/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jcurhan/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (615.0ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (5.6ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (415.0ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1217.5ms)
+
+
+Started GET "/" for ::1 at 2016-05-27 14:52:41 -0400
+Processing by BoardsController#index as HTML
+  [1m[35mBoard Load (0.4ms)[0m  SELECT "boards".* FROM "boards"
+  Rendered boards/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 864ms (Views: 863.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/boards.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-27 14:52:43 -0400
+
+
+Started GET "/assets/lists_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-27 14:52:43 -0400
+
+
+Started GET "/assets/style.self-681262c8c323c5e50ac04651cf55a78c73ddef257e41231114f1d3c788917edd.css?body=1" for ::1 at 2016-05-27 14:52:43 -0400
+
+
+Started GET "/assets/application.self-98cf8b921d735662ff29abffd752835e67fa08af0765581a78f871251f268794.css?body=1" for ::1 at 2016-05-27 14:52:43 -0400
+
+
+Started GET "/assets/tasks_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-27 14:52:43 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-27 14:52:43 -0400
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for ::1 at 2016-05-27 14:52:43 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-27 14:52:43 -0400
+
+
+Started GET "/assets/controllers/boardsController.self-a12e849ac3ff92d1d33ce353b4b8dc2057ff2bfff83e1dc56af15eb8d943c214.js?body=1" for ::1 at 2016-05-27 14:52:43 -0400
+
+
+Started GET "/assets/app.self-9d5ce5ca6924abe64ed99924b3b7e59478655493223fa97b77cacf1695e2ec14.js?body=1" for ::1 at 2016-05-27 14:52:43 -0400
+
+
+Started GET "/assets/controllers/listsController.self-04b68b70cf2fdf45b300d9b9ca7e7444645e66b2e36a2c999415d0b3566bdf66.js?body=1" for ::1 at 2016-05-27 14:52:45 -0400
+
+
+Started GET "/assets/controllers/tasksController.self-c86d4389be732681d84f57510aa93b230110c9af6633be960f645c607e0e2af8.js?body=1" for ::1 at 2016-05-27 14:52:45 -0400
+
+
+Started GET "/assets/models/list.self-f3776842b2d27f46bd87867ef901170b14a84dd42ced8ffcb9113bbc846ab574.js?body=1" for ::1 at 2016-05-27 14:52:45 -0400
+
+
+Started GET "/assets/models/task.self-70e4e214fb74011a40b277fee5d4c169d5fceab6f6ec2bf10f18fbac09c861a3.js?body=1" for ::1 at 2016-05-27 14:52:45 -0400
+
+
+Started GET "/assets/models/board.self-3bd1bb0f80aec5443613b260806d5fb6c464a33c6d95f1bcc52e48aca02cacf8.js?body=1" for ::1 at 2016-05-27 14:52:45 -0400
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for ::1 at 2016-05-27 14:52:45 -0400
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2016-05-27 14:52:45 -0400
+
+
+Started GET "/assets/bootstrap.min.css.map" for ::1 at 2016-05-27 14:52:45 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css.map"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jcurhan/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jcurhan/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jcurhan/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.5ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1166.7ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (541.2ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/jcurhan/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1072.9ms)
+
+
+Started GET "/boards/search?search=g" for ::1 at 2016-05-27 14:52:48 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"g"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%g%')[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=a" for ::1 at 2016-05-27 14:52:52 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"a"}
+  [1m[35mBoard Load (0.4ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%a%')
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boards/search?search=123" for ::1 at 2016-05-27 14:52:54 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"123"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%123%')[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=123" for ::1 at 2016-05-27 14:52:54 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"123"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%123%')
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=123" for ::1 at 2016-05-27 14:52:54 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"123"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%123%')[0m
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=12" for ::1 at 2016-05-27 14:52:56 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"12"}
+  [1m[35mBoard Load (0.4ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%12%')
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boards/search?search=1" for ::1 at 2016-05-27 14:52:56 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"1"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%1%')[0m
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=j" for ::1 at 2016-05-27 14:52:56 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"j"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%j%')
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=ju" for ::1 at 2016-05-27 14:52:57 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"ju"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%ju%')[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=jus" for ::1 at 2016-05-27 14:52:57 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"jus"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%jus%')
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/1" for ::1 at 2016-05-27 14:52:58 -0400
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.5ms)[0m  [1mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mList Load (0.6ms)[0m  SELECT "lists".* FROM "lists" WHERE "lists"."board_id" = ?  [["board_id", 1]]
+  [1m[36mTask Load (0.8ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."list_id" = ?[0m  [["list_id", 1]]
+  Rendered boards/show.html.erb within layouts/application (134.7ms)
+Completed 200 OK in 343ms (Views: 260.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/boards/search?search=asdf" for ::1 at 2016-05-27 14:53:51 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"asdf"}
+  [1m[35mBoard Load (0.4ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%asdf%')
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boards/search?search=asdf" for ::1 at 2016-05-27 14:53:51 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"asdf"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%asdf%')[0m
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=asdf" for ::1 at 2016-05-27 14:53:51 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"asdf"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%asdf%')
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=asdf" for ::1 at 2016-05-27 14:53:51 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"asdf"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%asdf%')[0m
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=asdff" for ::1 at 2016-05-27 14:53:53 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"asdff"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%asdff%')
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=asdf" for ::1 at 2016-05-27 14:54:00 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"asdf"}
+  [1m[36mBoard Load (0.5ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%asdf%')[0m
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boards/search?search=asd" for ::1 at 2016-05-27 14:54:01 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"asd"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%asd%')
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=as" for ::1 at 2016-05-27 14:54:15 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"as"}
+  [1m[36mBoard Load (0.4ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%as%')[0m
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boards/search?search=a" for ::1 at 2016-05-27 14:54:15 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"a"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%a%')
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=1" for ::1 at 2016-05-27 14:54:15 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"1"}
+  [1m[36mBoard Load (0.6ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%1%')[0m
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/boards/search?search=123" for ::1 at 2016-05-27 14:54:15 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"123"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%123%')
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=123" for ::1 at 2016-05-27 14:54:15 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"123"}
+  [1m[36mBoard Load (0.7ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%123%')[0m
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boards/search?search=123" for ::1 at 2016-05-27 14:54:15 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"123"}
+  [1m[35mBoard Load (0.4ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%123%')
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boards/search?search=1233" for ::1 at 2016-05-27 14:54:16 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"1233"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%1233%')[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=123" for ::1 at 2016-05-27 14:54:16 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"123"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%123%')
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=12" for ::1 at 2016-05-27 14:54:17 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"12"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%12%')[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=1" for ::1 at 2016-05-27 14:54:17 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"1"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE (name LIKE '%1%')
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/search?search=6" for ::1 at 2016-05-27 14:54:17 -0400
+Processing by BoardsController#search as */*
+  Parameters: {"search"=>"6"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE (name LIKE '%6%')[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/boards/10" for ::1 at 2016-05-27 14:54:20 -0400
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT  "boards".* FROM "boards" WHERE "boards"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE "lists"."board_id" = ?[0m  [["board_id", 10]]
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."list_id" = ?  [["list_id", 4]]
+  Rendered boards/show.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 88ms (Views: 86.1ms | ActiveRecord: 0.5ms)
