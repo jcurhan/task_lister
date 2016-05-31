@@ -12,3 +12,4 @@ To do items:
 
 New:
 1. Use Search box in nav bar to find other boards (use a listener to make ajax calls on key-up events to auto populate a dropdown with matching search results, querying the database for matches)
+2. for search results, on "hover"(like on click) toggleclass to add 'active'

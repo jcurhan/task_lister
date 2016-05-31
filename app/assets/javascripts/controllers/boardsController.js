@@ -6,6 +6,14 @@ $(document).ready(function() {
       event.preventDefault(); // prevent "Return" key for live search field
     }
   });
+  $(".list-group").on({
+    mouseenter: function() {
+      $(this).toggleClass("active");
+    },
+    mouseleave: function() {
+      $(this).toggleClass("active");
+    }
+  }, ".list-group-item");
 })
 
 app.boards.controller = {
