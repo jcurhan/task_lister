@@ -16,6 +16,7 @@ $(document).ready(function() {
   $(document).on('click', '.edit-task', function() {
     // To Do: Have a modal pop up on click, then capture the altered text to make ajax request on submit of the edit
     var taskId = $(this).attr('data-taskid');
+    debugger;
     var path = $(this).parent().parent().parent().children().attr('action')
     var url = path + "/" + taskId
     app.tasks.controller.edit.init(event, url)

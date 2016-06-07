@@ -23,4 +23,9 @@ class List < ActiveRecord::Base
     high = self.persisted_tasks.select{|task| task.priority == "High"}
     high + medium + low
   end
+
+  def self.average_tasks_per_list
+    lists_with_tasks = self.select {|list| list.tasks.count > 0}
+    "%.2f" % (lists_with_tasks.inject(0) {|sum, list| sum + list.tasks.count} / lists_with_tasks.size)
+  end
 end
