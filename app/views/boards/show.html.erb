@@ -25,7 +25,7 @@
        <ul class="list_task">
          <% list.sorted_tasks_by_priority.each do |task| %>
            <li>
-             <%= task.description %> - <%= task.priority %>
+             <span class="task-description"><%= task.description %></span> - <span class="task-priority"><%= task.priority %></span>
              <span class="delete-task" data-taskId="<%= task.id %>">[DELETE]</span>
              <span class="edit-task" data-taskId="<%= task.id %>">[EDIT]</span>
            </li>

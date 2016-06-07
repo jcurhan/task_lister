@@ -16,14 +16,19 @@ $(document).ready(function() {
   $(document).on('click', '.edit-task', function() {
     // To Do: Have a modal pop up on click, then capture the altered text to make ajax request on submit of the edit
     $('#taskModal').modal('show')
+    debugger;
+    var taskDescription = $(this).parent().find('.task-description').text()
+    var taskPriority = $(this).parent().find('.task-priority').text()
     var taskId = $(this).attr('data-taskid');
     var path = $(this).parent().parent().parent().children().attr('action')
     var url = path + "/" + taskId
-    if ($('#update-task').data('clicked', true)) {
-       app.tasks.controller.edit.init(event, url)
-       // want a click listener on the save changes button to grab the edited value and only then make the ajax update request, but 
-       //then dont have access to taskId, path
-    }
+    $('#update-task').on('click', function(){
+      var updatedTask 
+      debugger;
+      // on modal add an input field WITH the current text populated and then grab the updated text and selector to change priority, pass
+      // through and update both items.
+      app.tasks.controller.edit.init(event, url, updatedTask)
+    })
   });
 });
 
@@ -42,7 +47,7 @@ app.tasks.controller = {
           var description = response.task.description;
           var priority = response.task.priority;
           var task = new app.tasks.model.new(taskId, description, priority)
-          $('li[id=' + listId + '] .list_task').prepend("<li>" + description + " - " + priority + "<span class='delete-task' data-taskId=" + response.task.id + "> [DELETE]</span><span class='edit-task' data-taskId=" + response.task.id + "> [EDIT]</span></li>");
+          $('li[id=' + listId + '] .list_task').prepend("<li><span class='task-description'>" + description + "</span> - <span class='task-priority'>" + priority + "</span><span class='delete-task' data-taskId=" + response.task.id + "> [DELETE]</span><span class='edit-task' data-taskId=" + response.task.id + "> [EDIT]</span></li>");
         } else if (!response.success) {
           var errorMessage = response.error
           $('.error_messages').prepend('<h3>' + errorMessage + '</h3>')
@@ -64,12 +69,12 @@ app.tasks.controller = {
     }
   },
   edit: {
-    init: function(event, url) {
-      debugger;
+    init: function(event, url, updatedTask) {
      // event.preventDefault();
       $.ajax({
         url: url,
-        method: "PUT"
+        method: "PUT",
+        data: {updatedTask: updatedTask}
       }).success(function(response){
         debugger;
       })
