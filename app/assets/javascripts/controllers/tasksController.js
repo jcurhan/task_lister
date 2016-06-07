@@ -15,12 +15,16 @@ $(document).ready(function() {
   })
   $(document).on('click', '.edit-task', function() {
     // To Do: Have a modal pop up on click, then capture the altered text to make ajax request on submit of the edit
+    $('#taskModal').modal('show')
     var taskId = $(this).attr('data-taskid');
-    debugger;
     var path = $(this).parent().parent().parent().children().attr('action')
     var url = path + "/" + taskId
-    app.tasks.controller.edit.init(event, url)
-  })
+    if ($('#update-task').data('clicked', true)) {
+       app.tasks.controller.edit.init(event, url)
+       // want a click listener on the save changes button to grab the edited value and only then make the ajax update request, but 
+       //then dont have access to taskId, path
+    }
+  });
 });
 
 app.tasks.controller = {
@@ -61,10 +65,11 @@ app.tasks.controller = {
   },
   edit: {
     init: function(event, url) {
-      event.preventDefault();
+      debugger;
+     // event.preventDefault();
       $.ajax({
         url: url,
-        method: "POST"
+        method: "PUT"
       }).success(function(response){
         debugger;
       })

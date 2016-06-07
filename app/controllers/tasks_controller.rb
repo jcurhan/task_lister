@@ -12,7 +12,7 @@ class TasksController < ApplicationController
   end
 
   def update
-    binding.pry
+    @task = Task.find(params[:id]) 
   end
 
   def destroy

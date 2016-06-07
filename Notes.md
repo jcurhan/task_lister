@@ -14,3 +14,6 @@ New:
 1. Use Search box in nav bar to find other boards (use a listener to make ajax calls on key-up events to auto populate a dropdown with matching search results, querying the database for matches)
 2. for search results, on "hover"(like on click) toggleclass to add 'active'
 3. Make search results drop down independent of nav bar
+
+Edit:
+1. When edit is clicked, include a pop-up modal, ajax call to update in tasks controller (currently passes through IDs, need to pass through as data the updated task info), if save, then update the javascript on the page (without refresh)
