@@ -1,8 +1,5 @@
-Task Lister
+# Welcome to TaskLister
 
-A Rails/JavaScript Application
+TaskLister is a web application built in Rails/JavaScript that allows users to create and organize to-do lists and tasks.
 
-Welcome to TaskLister
-TaskLister is a web application built in Rails/JavaScript. TaskLister is an application that allows users to create and organize to-do lists and tasks.
-
-A live demo of TaskLister can be found here: [TBD]
+A live demo of TaskLister can be found here: [GiftSwap](https://github.com/jcurhan/task_lister)
