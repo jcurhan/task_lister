@@ -40,10 +40,16 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <h4 class="modal-title">Edit Task</h4>
       </div>
       <div class="modal-body">
-        <p>Some text in the modal.</p>
+        <h6 id='task-error-message'></h6>
+        <p>Description: <input type="text" id="edit-task-field">
+          Priority: <select id="edit-task-priority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

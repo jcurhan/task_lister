@@ -16,21 +16,24 @@ $(document).ready(function() {
   $(document).on('click', '.edit-task', function() {
     // To Do: Have a modal pop up on click, then capture the altered text to make ajax request on submit of the edit
     $('#taskModal').modal('show')
-    debugger;
     var taskDescription = $(this).parent().find('.task-description').text()
     var taskPriority = $(this).parent().find('.task-priority').text()
     var taskId = $(this).attr('data-taskid');
     var path = $(this).parent().parent().parent().children().attr('action')
     var url = path + "/" + taskId
+    $('#edit-task-field').val(taskDescription) // prefill description field
+    $('#edit-task-priority').val(taskPriority) // preselect priority field
     $('#update-task').on('click', function(){
-      var updatedTask 
-      debugger;
-      // on modal add an input field WITH the current text populated and then grab the updated text and selector to change priority, pass
-      // through and update both items.
-      app.tasks.controller.edit.init(event, url, updatedTask)
+      $('#task-error-message').empty()
+      var $modalBody = $(this).parent().parent();
+      var updatedTask = $modalBody.find('#edit-task-field').val()
+      var updatedPriority = $modalBody.find('#edit-task-priority').val()
+      app.tasks.controller.edit.init(event, url, updatedTask, updatedPriority)
     })
   });
 });
+
+// move the logic in the listeners above into the functions below?
 
 app.tasks.controller = {
   new: {
@@ -69,15 +72,28 @@ app.tasks.controller = {
     }
   },
   edit: {
-    init: function(event, url, updatedTask) {
-     // event.preventDefault();
+    init: function(event, url, updatedTask, updatedPriority) {
+      event.preventDefault
       $.ajax({
         url: url,
         method: "PUT",
-        data: {updatedTask: updatedTask}
+        data: {description: updatedTask, priority: updatedPriority}
       }).success(function(response){
-        debugger;
+        if (response.success) {
+          $('#taskModal').modal('hide')
+          var updatedTask = response.task.description;
+          var updatedPriority = response.task.priority;
+          var taskId = response.task.id
+          var listId = response.list.id 
+          app.tasks.controller.render(updatedTask, updatedPriority, taskId, listId)
+        } else if (!response.success) {
+          var errorMessage = response.error;
+          $('#task-error-message').append(errorMessage)  
+        }
       })
     }
+  },
+  render: function(updatedTask, updatedPriority, taskId, listId) {
+    debugger;
   }
 }

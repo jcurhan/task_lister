@@ -13,6 +13,12 @@ class TasksController < ApplicationController
 
   def update
     @task = Task.find(params[:id]) 
+    @list = @task.list
+    if @task.update(task_params)
+      render json: { task: @task, list: @list, success: true }
+    else
+      render json: { error: @task.errors.full_messages.first, success: false }
+    end
   end
 
   def destroy

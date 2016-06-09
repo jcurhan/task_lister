@@ -17,3 +17,7 @@ New:
 
 Edit:
 1. When edit is clicked, include a pop-up modal, ajax call to update in tasks controller (currently passes through IDs, need to pass through as data the updated task info), if save, then update the javascript on the page (without refresh)
+
+
+Tests:
+-write tests (model and feature)
